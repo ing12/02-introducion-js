@@ -1,17 +1,28 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+//OPERADOR CONDICIONAL TERNARIO
+/**
+ * El operador condicional (ternario) es el único operador en JavaScript que tiene tres operandos. Este operador se usa con frecuencia como atajo para la instrucción if.
+ * 
+ * SINTAXIS
+ * condición ? expr1 : expr2
+ */
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const Activo = true
+// let mensaje= ''
+
+// if (Activo) {
+//     mensaje = 'Activo'
+// } else {
+//     mensaje = 'Inactivo'
+// }
+// console.log(mensaje);
+
+//con el operador ternario  true        false
+// const mensaje = (Activo) ? 'Activo' : 'Inactivo'
+// console.log(mensaje);
+
+//Simplicar aun mas el if, si en caso de no cumplirse siempre va a arrojar falso,
+//enronces no es necesario colocar false, o los : , puesto que and && simpre arrojara si la condicion no se cumple
+const mensaje = !Activo && 'Activo'
+console.log(mensaje);
+
